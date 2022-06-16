@@ -1,5 +1,10 @@
 # SNIP-20 Reference Implementation
 
+## ⚠️ USAGE CHANGES
+
+- Must pass supported IBC denoms as `supported_denoms` (list of strings) with InitMsg to specify which asset is supported
+- "There is a breaking change in redeem where you now have to pass the denom you want to withdraw" -Assaf
+
 This is an implementation of a [SNIP-20](https://github.com/SecretFoundation/SNIPs/blob/master/SNIP-20.md), [SNIP-21](https://github.com/SecretFoundation/SNIPs/blob/master/SNIP-21.md), [SNIP-22](https://github.com/SecretFoundation/SNIPs/blob/master/SNIP-22.md), [SNIP-23](https://github.com/SecretFoundation/SNIPs/blob/master/SNIP-23.md) and [SNIP-24](https://github.com/SecretFoundation/SNIPs/blob/master/SNIP-24.md) compliant token contract.
 At the time of token creation you may configure:
 * Public Total Supply:  If you enable this, the token's total supply will be displayed whenever a TokenInfo query is performed.  DEFAULT: false
